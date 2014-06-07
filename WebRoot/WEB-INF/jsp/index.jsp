@@ -32,6 +32,13 @@
 		<li><a href="${base }/jui_ui2">jUI 使用案例</a></li>
 	</ul>
 	
+	<h1>多级菜单联动案例</h1>
+	<ul>
+		<li><a href="${base }/selectdemo1">纯 jQuery 三级联动一</a></li>
+		<li><a href="${base }/selectdemo2">jQuery Ajax 三级联动二</a></li>
+		<li><a href="${base }/selectdemo3">jQuery Ajax 三级联动三</a></li>
+		<li><a href="${base }/selectdemo4">三级联动 教学案例</a></li>
+	</ul>
 	
 	
 	
