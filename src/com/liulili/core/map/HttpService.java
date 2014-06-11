@@ -26,6 +26,8 @@ import org.apache.http.util.EntityUtils;
 
 
 import org.nutz.ioc.loader.annotation.IocBean;
+import org.nutz.log.Log;
+import org.nutz.log.Logs;
 
 /**
  * 受 Nutz IOC 控制的类，由 IOC 自动生成对象
@@ -34,7 +36,7 @@ import org.nutz.ioc.loader.annotation.IocBean;
  */
 @IocBean
 public class HttpService {
-
+	private static final Log log = Logs.get();
 	
 	// 浏览器Agent
 	//public static String USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.151 Safari/535.19";
@@ -93,7 +95,8 @@ public class HttpService {
         String html = null;  
         HttpClient httpClient = new DefaultHttpClient();//创建httpClient对象  
         HttpGet httpget = new HttpGet(url);//以get方式请求该URL  
-   
+        
+        
         try {  
             HttpResponse responce = httpClient.execute(httpget);//得到responce对象  
             int resStatu = responce.getStatusLine().getStatusCode();//返回码  

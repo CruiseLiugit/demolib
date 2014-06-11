@@ -40,6 +40,11 @@
 		<li><a href="${base }/selectdemo4">三级联动 教学案例</a></li>
 	</ul>
 	
+	<h1>测试留夫鸭接口案例</h1>
+	<ul>
+		<li><a href="${base }/interface1">接口一查询门店</a></li>
+	</ul>
+	
 	
 	
   </body>
